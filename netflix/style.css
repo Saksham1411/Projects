@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;	
+	-webkit-font-smoothing: antialiased;
+    background: #000;
+	color: #ffffff;
+}
+h1,h2,h3,h4{
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+}
+.bigger{
+    font-size: 1.5rem;
+    color: white;
+    line-height: 2rem;
+}
+.showcase{
+    background: url(IN-en-20230703-popsignuptwoweeks-perspective_alpha_website_medium.jpg)
+    no-repeat center center/cover;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.showcase::after{
+    content: ' ';
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: inset 120px 100px 250px #000000,
+     inset -120px -100px 250px #000000;
+}
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 100px;
+}
+.showcase .showcase-top img{
+    width: 9.25rem;
+    float: left;
+}
+
+.showcase .showcase-top .btn{
+    float: right;
+}
+#Language{
+    
+    height: 2rem;
+    width: 8.25rem;
+    text-align: center;
+    border: 1px white solid 2px;
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    font-size: 16px;
+}
+#Language::before{
+    content: '+';
+    color: white;
+}
+select.right{
+    float: right;
+    margin: 0 10px;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: center;
+}
+.btn{
+    color: white;
+    background-color: #e50914;
+    border-radius: 0.3rem;
+    border: none;
+    height: 32px;
+    width: 76px;
+    margin-left: 10px;
+}
+.btn-xl{
+    height: 56px;
+    width: 201px;
+    font-size: 24px;
+    font-weight:600;
+    box-sizing: border-box;
+}
+.showcase-main{
+    position: relative;
+    z-index: 2;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.showcase-main h1{
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 900;
+}
+.showcase-main .bigger{
+    text-align: center;
+    line-height: 3.2rem;
+    
+}
+.big{
+    text-align: center;
+    font-size: 22px;
+}
+.email{
+    margin-top: 20px;
+}
+.email .form{
+    margin-top: 15px;
+}
+.email .form #email{
+    background-color: rgba(0, 0, 0,0.6);
+    color: rgb(255, 255, 255);
+    border: 1px rgba(156, 156, 156, 0.7) solid;
+    border-radius: 4px;
+    height: 56px;width: 376px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 24px 16px;
+    box-sizing: border-box;
+}
+
+.box1{
+    border-top:8px #232323 solid ;
+}
+.box{
+    background-color: #000;
+    border-bottom:8px #232323 solid;   
+    padding: 50px 0;
+
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box img{
+    width: 100%;
+}
+.box h1{
+    font-size: 48px;
+    margin-bottom: 16px;
+    line-height: 3.6rem;
+    font-weight: 900;
+}
+.vdo{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    top: 21%;
+    left: 14%;
+    max-width: 73%;
+    max-height: 54%;
+}
+.vdo-2{
+    top: 7%;
+    left: 18%;
+    max-width: 64%;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+.z-1{
+    z-index: 1;
+    position:relative;
+    display: block;
+    max-width: 100%;
+}
+.right{
+    width: 35%;
+    padding-left: 5px;
+    position: relative;
+}
+.box .left{
+    width: 35%;
+}
+.box .left-rel{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box .down{
+    width: 60%;
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    background-color: black;
+    border: 3px #232323 solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 5px;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+.txt{
+    text-align: left;
+}
+.blue{
+    color: blue;
+    font-size: 14px;
+}
+.gif{
+    height: 3rem;
+    width: 3rem;
+}
+.box .boxshot img{
+    object-fit: contain;
+    height: 5rem;
+    width: 3.5rem;
+    overflow: hidden;
+    margin-top: 2px ;
+} 
+.box .FAQ{
+    margin: auto;
+}
+.box .FAQ h1{
+    text-align: center;
+}
+.chk{
+    display: none;
+}
+.box .bo{
+    margin-bottom: 8px;
+}
+.box .FAQ label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    margin: auto;
+    width: 80%;
+    /* height: 84px; */
+    background-color: rgb(45, 45, 45);
+    box-sizing: border-box;
+    border-bottom:1px black solid ;
+
+}
+.FAQ label::after{
+    font-family: 'FontAwesome';
+    content: '\f067';
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: right;
+    transition: transform;
+    transition-duration:0.1s;
+}
+
+.box .FAQ label:hover{
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+}
+.hide{
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 0;
+
+    margin: auto;
+    width: 80%;
+    background-color: rgb(45, 45, 45);
+    transition-property: max-height;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.hide p{
+    margin: 0;
+    margin: 24px;
+    -webkit-margin-top-collapse:collapse ;
+    line-height: 2rem;
+}
+.bo input[type="checkbox"]:checked ~ div.hide{
+    max-height: 36em;
+    opacity: 1;
+}
+.FAQ input:checked + label::after{
+    transform: rotate(45deg);
+}
+
+#box-last{
+    margin-bottom: 40px;
+}
+footer{
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    
+}
+footer .foot{
+    margin: auto;
+    width: 75%;
+    padding: 60px 0;
+}
+footer .links{
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+footer a{
+    color: #ffffffB4;
+    width: 30%;
+    font-size: 14px;
+}
+footer .end{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+
+
+
+
+@media (max-width:950px){
+    .box{
+        flex-direction: column;
+        text-align: center;
+    }.box h1{
+        font-size: 32px;
+    }.box p{
+        font-size: 16px;
+    }.col-rev{
+        flex-direction: column-reverse;
+    }.text{
+        width: 100%;
+    }
+    .down{
+        width: 100%;
+    }
+}
+
