@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #F5F5F5;
+    color: #3F2305;
+    
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: #3F2305;
+}
+.navbar{
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.navbar .name{
+    font-style: italic;
+}
+.navbar .menu{
+    position: absolute;
+    right: 1%;
+    display: none;
+}
+.navbar input{
+    position: absolute;
+    right: 1%;
+    display: none;
+}
+.navbar .menu i{
+    font-size: 1.5rem;
+}
+.navbar ul{
+    /* position: relative; */
+    list-style: none;
+    display: flex;
+}
+.navbar ul li{
+    border-right: .1px #3F2305 dotted;
+    padding: 8px;
+    font-size: 18px;
+}
+.navbar ul li:last-child{
+    border: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #3F2305;
+
+}
+.navbar ul li a:hover{
+    font-size: 17px;
+}
+.showcase{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* opacity: 0; */
+    animation: fade-in 1s ease;
+}
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+.showcase .pic{
+    margin-right: 20px;
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: top-down 0.4s linear;
+}
+@keyframes top-down {
+    from{
+        transform: translateX(-70%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+.showcase .pic img{
+    top: 0%;
+    position: absolute;
+    right: -26%;
+    /* filter: saturate(0); */
+    width: 600px;
+}
+.showcase .about{
+    width: 400px;
+    animation: top- 0.4s linear;
+}
+@keyframes top- {
+    from{
+        transform: translateX(70%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+.showcase .about h1{
+    font-size:100px;
+}
+.showcase .about h2{
+    margin: 5px 0;
+}
+.showcase .about .box{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+.circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #DFD7BF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle:hover{
+    background-color: #F2EAD3;
+    cursor: pointer;
+}
+.circle a{
+    text-decoration: none;
+    color: #3F2305;
+    font-size: 16px;
+}
+/* about me */
+.about-me{
+    width: 75%;
+    margin: 50px auto;
+    padding: 40px 0;
+    border-top: 2px #DFD7BF solid; 
+}
+.about-me h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.about-me p{
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.6rem;
+
+}
+
+/* resume */
+.resume{
+    width: 75%;
+    margin: auto;
+    border-top: 2px #DFD7BF solid; 
+    border-bottom: 2px #DFD7BF solid;
+    padding: 40px 0;
+}
+.resume h1{
+    font-size: 40px;
+}
+.resume h2{
+    font-size: 30px;
+}
+.resume ul{
+    margin-top: 10px;
+    width: 40%;
+}
+.resume ul li{
+    margin: 10px 35px;
+    font-size: 18px;
+}
+.resume div{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin:20px 30px;
+}
+.projects p{
+    margin: 15px 35px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* contact-me */
+
+.contact-me {
+    display: flex;
+    width: 75%;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    justify-content: space-between;
+
+}
+.contact-me .cont{
+    width: 40%;
+    margin-left: 5px;
+}
+.contact-me .cont p{
+    margin: 8px 0;
+}
+
+.contact-me .cont h3{
+    margin: 6px 0;
+}
+.contact-me h1{
+    font-size: 50px;
+}
+
+.contact-me .form{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form input[type="text"],input[type="email"]{
+    height: 35px;
+    border: 1px #DFD7BF solid;
+    padding-left: 10px;
+    /* width: 180px;/ */
+    /* width: 50%; */
+}
+.form input[type="text"]:focus,input[type="email"]:focus{
+    border: 1px #3F2305 solid;
+    border-radius: 5px;
+    outline: none;
+}
+#Msg{
+    height: 120px;
+    width: 230px;
+}
+.form .circle{
+    margin-top: 15px;
+}
+/* footer */
+.foot{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    border-top: 2px #DFD7BF solid;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+i.fa-xl{
+    font-size: 1.5em;
+    margin-top: 12px;
+}
+.foot div{
+    margin-right: 10px;
+}
+.foot div:last-child{
+    align-self: flex-end;
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media (max-width:768px) {
+    .showcase{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }.showcase .pic{
+        width: 350px;
+        height: 350px;
+    }.showcase .pic img{
+        right: -35%;
+    }
+    .about-me,.resume,.contact-me,.foot{
+        width: 85%;
+    }
+}
+@media (max-width:500px){
+    .navbar .menu{
+        display: block;
+        right: 0;
+        z-index: 2;
+    }
+    .navbar .links{
+        visibility: hidden;
+        
+    }
+    .links ul li{
+        border: none;
+    }
+    input[type="checkbox"]:checked + div ul{
+        visibility: visible;
+        flex-direction:column;
+        position: absolute;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfd7bfe5;
+        width: 105vw;
+        height: 105vh;
+        z-index: 1;
+        animation: menu 0.2s linear;
+        animation-direction: alternate;
+        transform: translateX(-92%);
+        
+    }
+    @keyframes menu {
+        from{
+            transform: translateX(0);
+        }to{
+            transform: translateX(-92%);
+        }
+    }
+    .showcase .about{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .showcase .about h1{
+        font-size: 60px;
+    }
+    .showcase .about h2{
+        font-size: 25px;
+    }
+    p,.about-me p{
+        font-size: 14px;
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+    }.showcase .pic{
+        width: 250px;
+        height: 250px;
+    }.showcase .pic img{
+        right: -50%;
+        top: -12%;
+        height: 500px;width: 500px;
+    }.resume div{
+        flex-direction: column;
+    }
+    .resume div ul{
+        width: 100%;
+    }
+    .contact-me{
+        flex-direction: column;
+    }
+    .contact-me .form{
+        margin-top: 30px;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .foot div{
+        margin-bottom: 20px;
+    }
+
+}
