@@ -22,6 +22,7 @@ function addBtnF(e) {
     let val = input.value.trim();
     if (input.value.trim() === "") {
         alert("your input is empty");
+        return;
     }
 
     if (isEdit) {
@@ -29,6 +30,7 @@ function addBtnF(e) {
         olditem.remove();
         removeItemFromStorage(olditem.textContent);
         isEdit = false;
+        return;
     }
     
     addItemToStorage(val);
